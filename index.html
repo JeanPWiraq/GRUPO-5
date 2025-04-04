@@ -3,10 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/library/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Portafolio Jean Poma</title>
   </head>
 
-  <body>
-    <h1>Bienvenido a mi portafolio</h1>
+  <body class="container mt">
+    <!--Fila 01-->
+    <div class="row"> <!--12-->
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="col-sm-3">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/img/index/crecimiento.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Ciberseguridad
+              </a>
+            </div>
+          </nav>
+        </div><!--3-->
+        <div class="col-sm-9">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contactanos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Foros
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Comunidad</a></li>
+                      <li><a class="dropdown-item" href="#">Novedades</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Zona academica</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Link</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div><!--9-->
+      </nav>
+    </div>
+
+    <!--Fila 02-->
+    <div class="row mt-5">
+      <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-6">
+              <img src="/img/index/ciberseguridad.png" alt="" width=80% height=80%>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li>“El impacto de las redes sociales en la salud mental”</li>
+                <li>Es muy relevante hoy en día, especialmente entre jóvenes y profesionales digitales. Puedes abordarlo de forma clara y sencilla, con datos actuales. Te permite mostrar que estás al tanto de temas sociales y de bienestar, además de tecnología. </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/index/carrucel/slide01.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/index/carrucel/slide02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/index/carrucel/slide03.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Fila 03-->
+    <div class="row mt-5">
+      <div class="col-sm-4">
+        <div class="service-block col-md-6">
+          <a href="/pages/comunidad.html">
+              <img src="/img/index/service-1.png" alt="Dar a conocer tu conocimiento">
+              <h3 class="service-title">Comunidad</h3>
+          </a>
+          <p>Comparte con la comunidad: discusiones, imágenes, vídeos, comentarios... Teniendo un foro activo y bien referenciado por internet.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="service-block col-md-6">
+          <a href="/pages/Novedades.html">
+              <img src="/img/index/service-3.png" alt="Dar a conocer tu conocimiento">
+              <h3 class="service-title">Novedades</h3>
+          </a>
+          <p>Enterate de las ultimas Novedades en Ciberseguridad</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="service-block col-md-6">
+          <a href="/pages/zona-academica.html">
+              <img src="/img/index/service-2.png" alt="Dar a conocer tu conocimiento">
+              <h3 class="service-title">Zona Academica</h3>
+          </a>
+          <p>Comparte tu conocimiento y su contenido con la comunidad: discusiones, imágenes, vídeos, comentarios... Teniendo un foro activo y bien referenciado por internet.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/library/bootstrap/popper.min.js"></script>
+    <script src="/library/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src=""></script>
   </body>
 </html>
