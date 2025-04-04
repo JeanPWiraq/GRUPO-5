@@ -1,0 +1,7 @@
+
+
+/*.services-section .service-block a, .bottom-section .service-block a, .services-section .service-block a img, .bottom-section .service-block a img {
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 0.2s ease-in-out; 
+}*/
