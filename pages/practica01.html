@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<style>
+    .fondo {
+        background-color: grey;
+    }
+
+    * {
+        background-color: skyblue;
+    }
+</style>
+
+<body class="">
+
+    <div style="height: 150px;">
+
+    </div>
+
+    <div class="fondo">
+        <!-- Contenido del comentario -->
+        <etiqueta class="fondo" id="" name=""> CONTENIDO </etiqueta>
+
+        <img src="" alt="" width="" height="">
+        <hr class="" id="">
+        <br id="">
+
+        <p style="color: red;">Aca va el parrafo <br> otro parrafo</p>
+        <a href="#idDiv">Clic acá</a>
+        <br>
+        <a href="https://www.google.com" target="_blank">ir a Google</a>
+
+
+        <div id=" idDiv">
+            <button onclick="saludar()">clic me</button>
+
+            <input type="text" onkeypress="saludar()">
+
+            <hr>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+
+            <br>
+            <table>
+                <tr>
+                    <th>N°</th>
+                    <th>Nombres</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Alumno 1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Alumno 2</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="../js/practica.js"></script>
+
+    <script>
+        //Comentario
+
+        var nombreVariableGlobal;
+        nombreVariableGlobal = "Hola";
+        nombreVariableGlobal = "hola 2";
+
+        let nombreVar = 123;
+        let variableDesconocida;
+        variableDesconocida = true;
+
+        const valor = 456;
+
+        let objeto = {
+            nombre: "Nombre",
+            apellido: "Apellido"
+        };
+
+        let celular = {
+            nombre: "S25 ultra",
+            Modelo: "S985",
+            memoriaRAM: 12,
+            memoriaROM: 512,
+            color: "gris titanium",
+            vigente: false
+        };
+
+        let arreglo = [1, 2, 3, 4, 55, 6, 7, 86, 9, 130 , 11, 12, 123, 14];
+        let arreglo_2 = ["Hola", 23, true, celular];
+
+       function saludar(){
+
+        for(let i=0; i<arreglo.length; i++){
+            let item = arreglo[i];
+            if(item == 7){
+                break;
+            }            
+        }
+
+        arreglo.forEach(item => {
+            
+            console.log(item);
+        });
+
+       }
+
+
+       let auxv2 = 1;
+       auxv2 = auxv2 + 1;
+       auxv2++;
+
+
+        //Funcion Simple
+        function sumar() {
+
+            debugger
+
+            //sentencias
+            // Case Sensitive
+            nombrevar = 4 * 4;
+
+            if ("hola" == "Hola") {
+                //Haces algo
+                console.log("OK");
+            }
+        }
+
+        //Funcion con argumentos
+        function haceAlgo(valor1, valor2) {
+            let resultado = valor1 + valor2;
+
+            console.log("Resultado   " + resultado);
+
+        }
+
+        //Funcion con argumentos y valor de retorno
+        function haceOtraCosa(valor1, valor2) {
+            let temp = valor1 + valor2;
+            let genero = "M";
+
+            //Condicional
+            if (temp > 50) {
+                console.log("Algo");
+
+            } else {
+                console.log("Otra cosa")
+            }
+
+            //Condicional Ternario
+            let persona = genero == "M" ? "Hombre" : "Mujer";
+
+            switch (true) {
+                case "te escribe" == "te escribe":
+                    console.log("Te quiere");
+                    break;
+                case "No escribe" == "te escribe":
+                    console.log("No te quiere");
+                    break;
+
+                default:
+                    console.log("No le interesas");
+                    break;
+            }
+
+
+            return temp;
+        }
+
+
+
+    </script>
+
+    
+
+</body>
+
+</html>

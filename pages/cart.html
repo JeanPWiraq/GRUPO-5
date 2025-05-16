@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+
+<!--Change 2025-->
+<body class="container mt-3">
+    <!--Fila 01-->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg bg-nav-mod">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/index/supermercado.png" alt="JeanPoma" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    <span class="ml-mod">CompuFast</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Otros
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Contactanos</a></li>
+                                <li><a class="dropdown-item" href="#">Acerca</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input id="idBuscar" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <span class="btn btn-outline-success btnBuscar">Buscar</span>
+
+                    </form>
+                            <div>
+                                <img src="/img/index/carrito-de-compras.png" alt="JeanPoma" width="30" height="24"
+                                      class="d-inline-block align-text-top">
+	                            <a href="/pages/cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a>
+                            </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <a class="btn btn-sm btn-success" id="idNewProject">Nuevo Producto</a>
+    </div>
+
+    <!--Fila 02-->
+
+    <section class="ftco-section ftco-cart">
+			<div class="container">
+				<div class="row">
+    			<div class="col-md-12 ftco-animate">
+    				<div class="cart-list">
+	    				<table class="table">
+						    <thead class="thead-primary">
+						      <tr class="text-center">
+						        <th>&nbsp;</th>
+						        <th>&nbsp;</th>
+						        <th>Producto</th>
+						        <th>Precio</th>
+						        <th>Cantidad</th>
+						        <th>Total</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url(images/product-3.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>LAPTOP LENOVO IDEAPAD SLIM 3</h3>
+						        	<p>Lo que todo Estudiante necesita</p>
+						        </td>
+						        
+						        <td class="price">$465.90</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">$465.90</td>
+						      </tr><!-- END TR-->
+
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url(images/product-4.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>LAPTOP LENOVO IdeaPad Slim 3</h3>
+						        	<p>No te quedes atras</p>
+						        </td>
+						        
+						        <td class="price">$476.20</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">$476.20</td>
+						      </tr><!-- END TR-->
+						    </tbody>
+						  </table>
+					  </div>
+    			</div>
+    		</div>
+    		<div class="row justify-content-center">
+    			<div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate">
+    				<div class="cart-total mb-3">
+    					<h3>Cart Totals</h3>
+    					<p class="d-flex">
+    						<span>Subtotal</span>
+    						<span>$20.60</span>
+    					</p>
+    					<p class="d-flex">
+    						<span>Delivery</span>
+    						<span>$0.00</span>
+    					</p>
+    					<p class="d-flex">
+    						<span>Descuento</span>
+    						<span>$3.00</span>
+    					</p>
+    					<hr>
+    					<p class="d-flex total-price">
+    						<span>Total</span>
+    						<span>$939.10</span>
+    					</p>
+    				</div>
+    				<p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Pasar por la caja</a></p>
+    			</div>
+    		</div>
+			</div>
+		</section>
+
+    <!--Fila 03-->
+
+    <!--Esto es un cambio-->
+
+    <script src="/library/bootstrap/popper.min.js"></script>
+    <script src="/library/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/library/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
